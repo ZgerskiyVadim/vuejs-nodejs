@@ -1,0 +1,42 @@
+{
+  "extends": "nodejs",
+  "rules": {
+    "eqeqeq" : "off",
+    "no-unused-vars": [
+      "error",
+      {
+        "args": "none",
+        "ignoreRestSiblings": true
+      }
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "require-jsdoc": [
+      "error",
+      {
+        "require": {
+          "FunctionDeclaration": true,
+          "MethodDefinition": true,
+          "ClassDeclaration": true
+        }
+      }
+    ],
+    "valid-jsdoc": [
+      "error",
+      {
+        "requireReturnDescription": true,
+        "requireParamDescription": true,
+        "requireReturnType": true,
+        "prefer": {
+          "arg": "param",
+          "argument": "param",
+          "class": "constructor",
+          "return": "returns",
+          "virtual": "abstract"
+        }
+      }
+    ]
+  }
+}
